@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/dashbord.css">
+</head>
+
+<body>
+    <div class="user">
+        <div id="menu" class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+
+            <div id="drop" class="profile">
+                <a href="profile.html">
+                    <h3>Profile</h3>
+                </a>
+                <a href="">
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        var drop = document.getElementById('drop');
+        var a = 0;
+        function myFunction(x) {
+            if (a == 0) {
+                x.classList.toggle("change");
+                drop.style.display = 'block';
+                a++;
+            }
+            else {
+                x.classList.toggle("change");
+                drop.style.display = 'none';
+                a--;
+            }
+
+        }
+    </script>
+    <div class="login">
+
+        <center>
+            <h1 style="color:white;font-size:60px;">Rainfall Prediction</h1>
+
+            <form action="#" method="post" class="predict">
+                <table>
+                    <tr>
+                        <th><label for="Location"><b>Location</b></label></th>
+                        <td>
+                            <select id="Location" name="Location" required>
+                                <option value="">Select Location</option>
+                                <option value="1">Andhra Pradesh</option>
+                                <option value="2">Arunachal Pradesh</option>
+                                <option value="3">Assam</option>
+                                <option value="4">Bihar</option>
+                                <option value="5">Chhattisgarh</option>
+                                <option value="6">Goa</option>
+                                <option value="7">Gujarat</option>
+                                <option value="8">Haryana</option>
+                                <option value="9">Himachal Pradesh</option>
+                                <option value="10">Jharkhand</option>
+                                <option value="11">Karnataka</option>
+                                <option value="12">Kerala</option>
+                                <option value="13">Madhya Pradesh</option>
+                                <option value="14">Maharashtra</option>
+                                <option value="15">Manipur</option>
+                                <option value="16">Meghalaya</option>
+                                <option value="17">Mizoram</option>
+                                <option value="18">Nagaland</option>
+                                <option value="19">Odisha</option>
+                                <option value="20">Punjab</option>
+                                <option value="21">Rajasthan</option>
+                                <option value="22">Sikkim</option>
+                                <option value="23">Tamil Nadu</option>
+                                <option value="24">Telangana</option>
+                                <option value="25">Tripura</option>
+                                <option value="26">Uttarakhand</option>
+                                <option value="27">Uttar Pradesh</option>
+                                <option value="28">West Bengal</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="date"><b>Enter Date</b></label></th>
+                        <td><input type="date" placeholder="Enter Date" id="date" required></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="mintemp"><b>Min Temp</b></label></th>
+                        <td><input type="number" placeholder="Enter Temp in °C" id="mintemp" required></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="maxtemp"><b>Max Temp</b></label></th>
+                        <td><input type="number" placeholder="Enter Temp in °C " id="maxtemp" required></td>
+                    </tr>
+
+                    <tr>
+                        <th><label for="windir"><b>Wind Direction</b></label></th>
+                        <td><input type="text" placeholder="Enter Wind Direction" id="windir" required></td>
+                    </tr>
+
+                </table>
+
+                <br>
+
+                <button type="submit" class="btn"><b>Predict</b></button>
+
+            </form>
+        </center>
+
+    </div>
+</body>
+
+</html>

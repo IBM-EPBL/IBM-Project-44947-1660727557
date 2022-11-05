@@ -1,0 +1,151 @@
+  body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: url(https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat;
+        background-position: center;
+        background-size: 100% 300%;
+    }
+
+    .title {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .title h1 {
+        color: white;
+        font-size: 60px;
+        font-family: Segoe Print;
+    }
+
+    .title button {
+        border-radius: 10px;
+        width: 20%;
+    }
+
+    /* Full-width input fields */
+    label input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    /* Set a style for all buttons */
+    button {
+        background-color: orange;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        opacity: 0.8;
+    }
+
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #1870d5;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .register b {
+        font-size: medium;
+    }
+
+    .register b:hover {
+        text-decoration: underline;
+    }
+
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        padding-top: 60px;
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 30%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    .div1 {
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .register {
+        background: none;
+        border: none;
+        color: black;
+        width: fit-content;
+        padding: 8px;
+    }
+
+    /* Add Zoom Animation */
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+
+        to {
+            transform: scale(1)
+        }
+    }
+
+
+    #message{
+        display: none;
+    }
