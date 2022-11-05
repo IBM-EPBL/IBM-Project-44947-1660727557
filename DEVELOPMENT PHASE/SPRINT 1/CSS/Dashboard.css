@@ -1,0 +1,105 @@
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2013/10/13/00/08/clouds-194840_960_720.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.user {
+  position: absolute;
+  top: 1%;
+  font-size: large;
+  width: 1.5%;
+  padding: 0.4%;
+}
+
+.profile {
+  text-align: center;
+  display: none;
+  position: absolute;
+  height: 250%;
+  width: 400%;
+  background-color: rgba(164, 165, 165, 0.421);
+  border-radius: 10px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: white;
+}
+
+.profile a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 5px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.btn {
+  height: 35px;
+  width: 40%;
+  font-size: medium;
+  background-color: rgb(239, 232, 23);
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+label b {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+select {
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  width: 105%;
+  background-color: rgb(239, 243, 243);
+}
+
+input {
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgb(239, 243, 243);
+}
+
+.predict {
+  border: 1px solid;
+  width: 30%;
+  padding: 30px;
+  background-color: rgba(250, 255, 255, 0.47);
+  border-radius: 5%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 18px;
+}
